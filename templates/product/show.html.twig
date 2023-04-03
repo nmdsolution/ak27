@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+{% for product in product %}
+<p>this is just a test </p>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="http://placehold.it/350x150" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <a href="#" class="btn btn-primary">{{ product.price}}.xaf</a>
+        </div>
+    </div>
+
+
+
+    </div>
+{% endfor %}
+{% endblock %}
